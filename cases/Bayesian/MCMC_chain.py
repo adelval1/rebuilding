@@ -91,14 +91,14 @@ def log_likelihood(X): # X = [0,1]
         if X[i]<0. or X[i]>1:
             return -1.e16
 
-    measurements = {"HF": {"mean": 1660000.02, "std-dev": 83000.}, # 10% uncertainty
-                    "Pd": {"mean": 33.3, "std-dev": 1.2},
-                    "Ps": {"mean": 10000, "std-dev": 0.5},
-                    "Tw": {"mean": 350, "std-dev": 17.5},
+    measurements = {"HF": {"mean": 1660000.02, "std-dev": 83000.}, # W/m2, 10% uncertainty
+                    "Pd": {"mean": 33.3, "std-dev": 1.2}, # Pa
+                    "Ps": {"mean": 10000, "std-dev": 0.5}, # Pa
+                    "Tw": {"mean": 350, "std-dev": 17.5}, # K
 
     }
 
-    priors = {"H": [10.,40.],
+    priors = {"H": [10.,40.], # MJ/kg
               "Pd": [measurements["Pd"]["mean"] - (4*measurements["Pd"]["std-dev"]),measurements["Pd"]["mean"] + (4*measurements["Pd"]["std-dev"])],
               "Ps": [measurements["Ps"]["mean"] - (4*measurements["Ps"]["std-dev"]),measurements["Ps"]["mean"] + (4*measurements["Ps"]["std-dev"])],
               "Tw": [300.,500.],
