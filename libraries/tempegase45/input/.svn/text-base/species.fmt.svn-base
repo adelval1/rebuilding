@@ -1,0 +1,4 @@
+@ 01:'Temperature   ' ARRAY 03 I 003 J 000 K 000
+@ 02:'S  of spc.    ' ARRAY 02 I 005 J 001 K 001
+@ 03:'H  of spc.    ' ARRAY 02 I 004 J 001 K 001 
+@ 04:'Cp of spc.    ' ARRAY 02 I 008 J 001 K 001 

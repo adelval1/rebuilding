@@ -1,0 +1,12 @@
+Chemical model for the mixture oxygen2.mix (model of Dunn & Kang)
+-----------------------------------------------------------------
+The constants for the chemical reactions are in the order  cf  bf  ef
+CGS  system
+NR
+2.0
+ O2 + O   = 2O  + O 
+   9.000e+19       -1.00   5.950e+04
+ O2 + O2  = 2O  + O2
+   3.240e+19       -1.00   5.950e+04
+-----------------------------------------------------------------
+STOP

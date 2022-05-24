@@ -1,0 +1,23 @@
+Omega 11 collision integrals                                                    
+O2 interactions                                                                 
+O2-O2         -9.67668E-03    2.12618E-01   -1.77047E+00    8.58808E+00         
+O2-O          -1.86954E-03    4.94588E-02   -7.01334E-01    6.06620E+00         
+O interactions                                                                  
+O-O2          -1.86954E-03    4.94588E-02   -7.01334E-01    6.06620E+00         
+O-O           -9.05100E-03    2.16280E-01   -2.00050E+00    9.40750E+00         
+Omega 22 collision integrals                                                    
+O2 interactions                                                                 
+O2-O2         -1.08216E-02    2.44418E-01   -2.02069E+00    9.29763E+00         
+O2-O          -3.07350E-03    7.87235E-02   -9.13464E-01    6.64138E+00         
+O interactions                                                                  
+O-O2          -3.07350E-03    7.87235E-02   -9.13464E-01    6.64138E+00         
+O-O           -9.69100E-03    2.37450E-01   -2.19950E+00    1.01214E+01         
+Bstar collision integrals                                                       
+O2 interactions                                                                 
+O2-O2         -6.06664E-03    1.42665E-01   -1.06789E+00    2.66780E+00         
+O2-O          -1.31598E-03    3.71298E-02   -3.26882E-01    1.00723E+00         
+O interactions                                                                  
+O-O2          -1.31598E-03    3.71298E-02   -3.26882E-01    1.00723E+00         
+O-O            0.00000E+00    1.43000E-02   -2.39000E-01    1.16420E+00         
+
+Collision integral data taken from air13_stallcop.trc

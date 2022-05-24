@@ -1,0 +1,261 @@
+NEBOULA=$(shell pwd)
+OBJ=$(NEBOULA)/../neboulaobj
+SRC=$(NEBOULA)/../neboulasrc
+EXE=$(NEBOULA)/../exe/neboula.exe
+CATCDIR =  $(NEBOULA)/../../libraries/adcat/exe
+PEGDIR = $(NEBOULA)/../../libraries/tempegase45/exec/lib
+
+# C compiler given below
+CC=gcc
+# FORTRAN-77 compiler given below
+# FC=f77
+# FORTRAN-90 compiler given below
+FC=gfortran
+
+# LIBRARY NAMES GIVEN BELOW
+LIBRARIES=  -L$(PEGDIR)  -L$(CATCDIR)
+Peglib = -lpegase -lm 
+CATClib = -lCATC -lm 
+
+# LINKER GIVEN BELOW
+LD=ifort
+
+# LINKER FLAGS GIVEN BELOW
+LDFLAGS=
+
+# DEFINES
+AR=ar
+ARFLAGS=rv
+CP=cp
+RM=rm -f
+
+# COMPILER FLAGS GIVEN BELOW
+COMPILERFLAGS=   -O
+#COMPILERFLAGS=   -g
+CFLAGS=$(COMPILERFLAGS)
+FFLAGS=$(COMPILERFLAGS) -O 
+PFLAGS=$(COMPILERFLAGS)
+COBFLAGS=$(COMPILERFLAGS) -xref
+CXXFLAGS=$(COMPILERFLAGS) -xref
+
+# INCLUDE SEARCH PATH GIVEN BELOW
+INCLUDES= $(NEBOULA)/../../libraries/tempegase45/src/*mod_* $(NEBOULA)/../../libraries/tempegase45/src/*interf*  $(CATCDIR)
+
+.SUFFIXES: .o .c .f90
+
+# SOURCES GIVEN BELOW
+SRCS=  $(SRC)/globvar.c\
+ $(SRC)/coeff.c\
+  $(SRC)/dynall.c\
+  $(SRC)/chemstr.c\
+  $(SRC)/gridgen.c\
+  $(SRC)/read_input.c\
+  $(SRC)/write_solution.c\
+  $(SRC)/init.c\
+  $(SRC)/linsol.c\
+  $(SRC)/numer.c\
+  $(SRC)/skin.c\
+  $(SRC)/main.c\
+  $(SRC)/splinmod.c\
+  $(SRC)/ent2temp.c \
+  $(SRC)/msq_der.c \
+  $(SRC)/continuity.c \
+  $(SRC)/momentum.c \
+  $(SRC)/energy.c \
+  $(SRC)/conc_eq_cfe.c\
+  $(SRC)/species.c \
+  $(SRC)/wall.c \
+  $(SRC)/f_util.f90\
+  $(SRC)/c_wrap.f90\
+  $(SRC)/elements_equations.c\
+  $(SRC)/elements_bc.c
+ 
+SRCD1 =  $(SRC)/stef_max_sut.c
+
+# OBJECTS GIVEN BELOW
+OBJS=  $(OBJ)/globvar.o\
+ $(OBJ)/coeff.o\
+  $(OBJ)/dynall.o\
+  $(OBJ)/chemstr.o\
+  $(OBJ)/gridgen.o\
+  $(OBJ)/read_input.o\
+  $(OBJ)/write_solution.o\
+  $(OBJ)/init.o\
+  $(OBJ)/linsol.o\
+  $(OBJ)/numer.o\
+  $(OBJ)/skin.o\
+  $(OBJ)/main.o\
+  $(OBJ)/splinmod.o\
+  $(OBJ)/ent2temp.o \
+  $(OBJ)/msq_der.o \
+  $(OBJ)/continuity.o \
+  $(OBJ)/momentum.o \
+  $(OBJ)/energy.o \
+  $(OBJ)/conc_eq_cfe.o\
+  $(OBJ)/species.o \
+  $(OBJ)/wall.o \
+  $(OBJ)/f_util.o\
+  $(OBJ)/c_wrap.o\
+  $(OBJ)/elements_equations.o\
+  $(OBJ)/elements_bc.o
+ 
+OBJD1 =  $(OBJ)/stef_max_sut.o
+
+smulti : $(OBJS) $(OBJD1)
+	@echo Linking... 
+	$(LD) -o $(EXE) $(LDFLAGS) $(OBJS) $(OBJD1)  $(LIBRARIES)  $(Peglib)   $(f90lib) $(CATClib)
+	@echo Success: $(EXE) has been created!
+	@echo the boundary layer code is all set and ready to go!
+	@echo '\07'
+
+
+.c.o:
+	$(CC) -c $(CFLAGS) -DNoChange $<
+
+.f90.o:
+	$(FC) -c $(FFLAGS) $(INCLUDES) -I$(PEGDIR)  $<
+
+
+.f90.a:
+	$(FC90) -c $(FFLAGS) $(INCLUDES) $<
+	$(AR) $(ARFLAGS) $@ $*.o
+	$(RM) $*.o
+
+
+ 
+$(OBJ)/globvar.o : $(SRC)/globvar.c
+	@echo compiling object
+	@cd $(OBJ); $(CC) $(CFLAGS)  -c $(SRC)/globvar.c
+ 
+$(OBJ)/coeff.o : $(SRC)/coeff.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/coeff.c
+ 
+$(OBJ)/dynall.o : $(SRC)/dynall.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/dynall.c
+ 
+$(OBJ)/chemstr.o : $(SRC)/chemstr.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/chemstr.c
+ 
+$(OBJ)/gridgen.o : $(SRC)/gridgen.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/gridgen.c
+ 
+$(OBJ)/read_input.o : $(SRC)/read_input.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/read_input.c
+
+$(OBJ)/write_solution.o : $(SRC)/write_solution.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/write_solution.c
+ 
+$(OBJ)/init.o : $(SRC)/init.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/init.c
+ 
+$(OBJ)/linsol.o : $(SRC)/linsol.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/linsol.c
+ 
+$(OBJ)/numer.o : $(SRC)/numer.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/numer.c
+ 
+$(OBJ)/skin.o : $(SRC)/skin.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/skin.c
+ 
+$(OBJ)/main.o : $(SRC)/main.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/main.c
+ 
+$(OBJ)/splinmod.o : $(SRC)/splinmod.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/splinmod.c
+ 
+$(OBJ)/ent2temp.o : $(SRC)/ent2temp.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/ent2temp.c
+ 
+$(OBJ)/msq_der.o : $(SRC)/msq_der.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/msq_der.c
+ 
+$(OBJ)/continuity.o : $(SRC)/continuity.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/continuity.c
+ 
+$(OBJ)/momentum.o : $(SRC)/momentum.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/momentum.c
+ 
+$(OBJ)/energy.o : $(SRC)/energy.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/energy.c
+ 
+$(OBJ)/conc_eq_cfe.o : $(SRC)/conc_eq_cfe.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/conc_eq_cfe.c
+ 
+$(OBJ)/species.o : $(SRC)/species.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/species.c
+ 
+$(OBJ)/wall.o : $(SRC)/wall.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/wall.c
+ 
+$(OBJ)/f_util.o : $(SRC)/f_util.f90
+	@echo compiling object
+	@cd $(OBJ); 	$(FC) -c $(FFLAGS) $(INCLUDES) -I$(PEGDIR)  $(SRC)/f_util.f90
+ 
+$(OBJ)/c_wrap.o : $(SRC)/c_wrap.f90
+	@echo compiling object
+	@cd $(OBJ); 	$(FC) -c $(FFLAGS) $(INCLUDES) -I$(PEGDIR)  $(SRC)/c_wrap.f90
+
+$(OBJ)/elements_equations.o : $(SRC)/elements_equations.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/elements_equations.c
+
+$(OBJ)/elements_bc.o : $(SRC)/elements_bc.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/elements_bc.c
+
+$(OBJ)/stef_max_sut.o : $(SRC)/stef_max_sut.c
+	@echo compiling object
+	@cd $(OBJ); 	$(CC) $(CFLAGS)  -c $(SRC)/stef_max_sut.c
+
+clean:
+	 $(RM) $(OBJ)/*.mod $(OBJ)/*.o $(OBJS) $(OBJD1) $(OBJD2) core $(EXE)
+
+touchsrcs:
+	touch $(SRCS)
+
+lint:
+	lint $(INCLUDES) $(SRCS) $(LINTLIBS)
+
+depend:
+	@test -w makefile || (echo No write permission to makefile: makefile; exit 1)
+	@cat < /dev/null > makedep
+	@for i in ${SRCS}; do \
+		 ($(CC) -M $(INCLUDES) $$i >> makedep); done
+#
+# Remove the next two lines to keep dependencies on system include files
+#
+	@grep -v "\.o:[	 ]*/usr/include" makedep > makedep1
+	@mv makedep1 makedep
+	@echo '/^# DO NOT DELETE THIS LINE/+1,$$d' > eddep
+	@echo '$$r makedep' >> eddep
+	@echo 'w' >> eddep
+	@${CP} makefile makefile.bak
+	@ed - makefile < eddep
+	@$(RM) eddep makedep
+	@echo '# DO NOT EDIT THIS FILE HERE.' >> makefile
+	@echo '# USER EDITS MUST PRECEDE THE COMMENT:' >> makefile
+	@echo '# "# DO NOT DELETE THIS LINE".' >> makefile
+	@echo '# see make depend above' >> makefile
+
+# DO NOT DELETE THIS LINE -- make depend uses it
+

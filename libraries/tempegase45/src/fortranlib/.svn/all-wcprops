@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/fortranlib
+END
+dlibchar.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/fortranlib/dlibchar.f90
+END
+parse_input.f90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/fortranlib/parse_input.f90
+END
+dlibfile.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/fortranlib/dlibfile.f90
+END
+dlib-err.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/fortranlib/dlib-err.f90
+END

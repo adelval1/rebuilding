@@ -1,0 +1,16 @@
+Matrix for the boundary conditions in Scott for
+Matrix nu
+0.0  0.0  0.0  0.0  1.0                                                         
+0.0  0.0  0.0  1.0  0.0                                                         
+Matrix mu of the reaction N+N=N_2
+0.0  0.0  0.0  0.0  0.0                                                         
+0.0  0.0  0.0  0.0  1.0                                                         
+0.0  0.0  0.0  0.0  0.0                                                         
+0.0  0.0  0.0  0.0  0.0                                                         
+0.0  0.0  0.0  0.0  0.0                                                         
+Matrix mu of the reaction O+O=O_2
+0.0  0.0  0.0  1.0  0.0                                                         
+0.0  0.0  0.0  0.0  0.0                                                        
+0.0  0.0  0.0  0.0  0.0                                                         
+0.0  0.0  0.0  0.0  0.0                                                         
+0.0  0.0  0.0  0.0  0.0

@@ -1,0 +1,14 @@
+Chemical model for the mixture argon3.mix (model: Hoffert-Lien)
+--------------------------------------------------------------------
+The constants for the chemical reactions are in the order  cf  bf  ef
+CGS  system
+NR
+2.0
+ Ar + Ar  = Arp + Ar + em
+   1.369e+09       +0.50  +1.353e+05
+   0.0               1.0
+ Ar + em  = Arp + em + em
+   3.056e+13       +0.50  +1.353e+05
+   1.0               1.0
+-----------*-----------*-----------*--------
+STOP

@@ -1,0 +1,21 @@
+1.1				!Barker effect correction
+14260001.4			!Enthalpy
+49600				!Static pressure
+200.75				!Free stream velocity
+25.d-3	700.d3	350		!Probe radius &	Heat flux & Wall temp(ref)
+0.3879 0.3010 0.5667 0.3096 0.4499 	!delta & u1e & u1y & V & NDP5
+1d-5				!enthalpy error
+1d-6				!enthalpy epsilon
+8d-1				!enthalpy alpha
+5000				!First guess of the outer temperature
+450	2000			!Min & Max wall temperatures
+32 				!Number of temperatures plotted
+8				!Number of gamma plotted
+1				!Gamma values
+.1
+.05
+.03
+.02
+.01
+.005
+0

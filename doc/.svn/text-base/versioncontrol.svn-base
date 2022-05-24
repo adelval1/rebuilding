@@ -1,0 +1,16 @@
+This file documents changes made in the code.
+version 1.0(Paolo Barbante[Boundary Layer Code], Garcia Munoz[rebuilding code])
+version 2.0(Hyun Woo Krassilchikoff[Cerbere],Jan Thoemel[Neboula])
+-introduction of naming convention:
+ boundary layer code: neboula
+ rebuilding code: cerbere
+ suit made of cerbere and neboula: cerboula
+-clear file structure for source code and case files
+-stored on svn
+-simplified input files for neboula and cerbere
+-addition of experimental version of catalysis library
+-etc
+version 2.1(Francesco Panerai)
+-use of intel fortran compiler ifort
+version 2.2(Paolo Barbante[neboula],Jan Thoemel[test])
+-bug fixes in jacobian and further. this allows high enthalpy rebuilding. use of stefan-maxwell diffusion for wall boundary condition is robust.s

@@ -1,0 +1,7 @@
+30		!Number of gamma
+probe_ST.out	!Name file for the first probe
+probe_FR.out	!Name file for the second probe
+probe_EQ.out	!Name file for the third probe
+.2384	25.d-3	!u1e & probe radius (1st probe)
+.2103	15.d-3	!u1e & probe radius (2nd probe)
+.2188	57.5d-3	!u1e & probe radius (3rd probe)

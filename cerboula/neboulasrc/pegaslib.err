@@ -1,0 +1,93 @@
+PGERR 001. There was an error during a READ of the mixture file.
+           Check that the syntax of this file is correct: 
+PGWAR 002. No collision integral file name was specified. Transport
+           properties will not be evaluated. This was in file:
+PGERR 003. The number of species as read in the mixture file is zero 
+           or lower. This is not allowed. This was in the file:
+PGERR 004. The number of basic nuclei in the mixture file is zero 
+           or lower. This is not allowed. This was in the file:
+PGERR 005. The number of reactions in the mixture file is zero
+           or lower. If frozen flow, set the flag accordingly. Value:
+PGERR 006. The number of species is equal to zero in the mixture
+           file:
+PGERR 007. The number of chemical reactions is equal to zero in the
+           mixture file:
+PGERR 008. The following file cannot be found. Please check that the
+           path below exists on your system:
+PGERR 009. The program wants to check for a specific file but an
+           error occurred during the INQUIRE statement for the path:
+PGERR 010. There was an error trying to open an existing file. Maybe
+           the file that follows is already in use:
+PGERR 011. There was an error trying to create a new file. Maybe the
+           disk is write-protected or that file already exists:
+PGERR 012. There was an error during an OPEN instruction of a file of
+           type UNKNOWN. Maybe the unit number is already in use:
+PGERR 013. There was an error closing the file associated to the unit
+           specified below. You might have a disk failure problem.
+PGERR 014. The number of nuclei for conservation equations is equal
+           to zero in the mixture file:
+PGERR 015. The left stoechiometric matrix is not diagonal (this will
+           cause the solver to crash) in the mixture file:
+PGERR 016. The sum of reaction and conservation equations does not
+           match the number of species (system is not well-defined):
+PGWAR 017. There was no name tag given to the species (the tag will be
+           set to blank) in the species file:
+PGERR 018. There is no file name associated to a reference table for
+           the following species file:
+PGWAR 019. Too many electronic levels are specified in the species
+           file (truncation will occur):
+PGWAR 020. No electronic levels given (number of levels is set to 1)
+           for the species file:
+PGERR 021. The molar mass is zero, which will induce a specific gas
+           constant of zero as well, in the species file:
+PGERR 022. There was an error during a READ of the species file.
+           Check that the syntax of this file is correct: 
+PGERR 023. There was an error during a READ of the reference table
+           file. Check that the syntax of this file is correct:
+PGERR 024. The temperature used in thermodynamic calculations is less
+           than or equal to zero:
+PGERR 025. The pressure used in thermodynamic calculations is less
+           than or equal to zero:
+PGERR 026. The density used in thermodynamic calculations is less
+           than or equal to zero:
+PGERR 027. One of the nonequilibrium temperatures used in
+           thermodynamic calculations is less than or equal to zero:
+PGWAR 028. Cannot use thermal nonequilibrium with reference tables.
+           Value of translation temperature will be used.
+PGERR 029. Wrong value of anharmonicity flag, the calculation will
+           not be performed.
+PGERR 030. The value of temperature is too low compared to the range
+           of reference tables.
+PGERR 031. The value of temperature is too high compared to the range
+           of reference tables.
+PGERR 032. The value of specific gas constant of the mixture is zero
+           or lower:
+PGERR 033. The value of the molar mass of the mixture is zero
+           or lower:
+PGERR 034. The value of specific gas constant of the initial state of
+           the mixture is zero or lower:
+PGERR 035. The value of the molar mass of one species is zero
+           or lower:
+PGWAR 036. Initial guess for a species is lower or equal to zero. The
+           value of this guess is set to 1:
+PGWAR 037. One of the data files needed for the Gupta fits is missing.
+           Corresponding property will not be correct. Filename:
+PGERR 038. There was an error trying to open an existing data file for
+           Gupta fits. Maybe the file that follows is already in use:
+PGWAR 039. Pressure is out of range for the use of Gupta curve fits.
+           Computed properties will be irrelevant.
+PGWAR 040. The square of the equilibrium speed of sound is smaller or
+           equal to zero. Speed of sound is set to zero. Routine:
+PGERR 041. It is not allowed to have a maximal number of electronic
+           levels equal to or less than zero. Value given follows:
+PGERR 042. The number of data points provided in the thermodynamic
+           reference table is greater than array size:
+PGERR 043. Error in dynamic array allocation, stopping the program
+           unconditionally.
+PGERR 044. The XINI array is being read from the mixture file but
+           nsp has not been set yet (array not allocated).
+PGWAR 045. The order of Sonine polynomials expansion is not in the
+	   range 2-4, the program will set it to 3.
+PGERR 046. A READ statement produced an error while accessing the
+           collision integrals file. Check your file format.
+

@@ -1,0 +1,19 @@
+@ 01:'Temperature   ' ARRAY 03 I 003 J 000 K 000
+@ 02:'Mass of O2    ' ARRAY 01 I 002 J 001 K 000
+@ 03:'Mass of N2    ' ARRAY 01 I 002 J 002 K 000
+@ 04:'Mass of NO    ' ARRAY 01 I 002 J 003 K 000
+@ 05:'Mass of NO+   ' ARRAY 01 I 002 J 004 K 000
+@ 06:'Mass of O+    ' ARRAY 01 I 002 J 005 K 000
+@ 07:'Mass of N+    ' ARRAY 01 I 002 J 006 K 000
+@ 08:'Mass of O2+   ' ARRAY 01 I 002 J 007 K 000
+@ 09:'Mass of N2+   ' ARRAY 01 I 002 J 008 K 000
+@ 10:'Mass of O     ' ARRAY 01 I 002 J 009 K 000
+@ 11:'Mass of N     ' ARRAY 01 I 002 J 010 K 000
+@ 12:'Mass of e-    ' ARRAY 01 I 002 J 011 K 000
+
+
+
+
+
+
+

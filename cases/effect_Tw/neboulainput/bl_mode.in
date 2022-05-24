@@ -1,0 +1,58 @@
+Only_stag is on (1) or off (0)                                                  
+1                                                                               
+Only_stag_mod is on (1) or off (0)                                              
+1                                                                               
+finite thickness is on (1) or off (0)                                           
+1                                                                               
+Number of grid points normal to the wall                                        
+100                                                                             
+Number of points at the external edge                                           
+1                                                                               
+Number of points in which the solution is written                               
+1                                                                               
+Number of reactions at the wall                                                 
+3                                                                               
+Diffusion type scheme 1 Stefan Maxwell 2 Ramshaw                                
+1                                                                               
+Axisymmetric 1=yes, 0=no                                                        
+1                                                                               
+Cone or generic axisymmetric 1=cone, 0=generic                                  
+0                                                                               
+2D 1=yes, 0=no                                                                  
+0                                                                               
+Flat plate or generic 2D 1=flat plate, 0=generic                                
+0                                                                               
+flg_anha for Pegase (0=no corrections, 1 and 2=corrections)                     
+0                                                                               
+oper 1 if chem. eq. computations 2 non-eq. comp.                                
+2                                                                               
+total therm. cond on if 1(make no use of diff. fluxes)                          
+0                                                                               
+Number of elements in the mixture(MUST be 2)                                    
+2                                                                               
+oper_traco 0 if cp int is not known for each species 1 if it                    
+1                                                                               
+mode 1 data for unit mole  2 data for unit mass                                 
+2                                                                               
+flg_neq 0 thermal equilibrium 2 thermal non-equilibrium                         
+0                                                                               
+flg_termo 0 compute from statistical thermodynamic 1 from ex                    
+0                                                                               
+flg_traco 0 collision integrals  1 curve fits                                   
+0                                                                               
+flg_stop 0 does not stop  1 stop on errors                                      
+1                                                                               
+sonine sonine polynomial order                                                  
+3                                                                               
+eq_flg 1)EQ-const nucl frac  2)NEQ  3)EQ-var nucl frac                          
+2                                                                               
+Wall catalycity model 1 Pietro Rini 2 Scott                                     
+2                                                                               
+Always put 1 ask Pietro                                                         
+1                                                                               
+Parameter lew for the local equilibrium wall
+0
+Parameter stef for the b.c. with Stefan-Maxwell
+1
+Parameter ram for the b.c. with Ramshaw
+0

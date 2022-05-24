@@ -1,0 +1,14 @@
+Chemical model for the mixture nitrogen2.mix (model: Dunn-Kang)
+----------------------------------------------------------------------------------
+The constants for the chemical reactions are in the order  cf  bf  ef
+CGS  unit system
+NR
+2.0
+N2 + N = 2N + N
+   4.085e+22      -1.500    1.130e+5
+   0.5             0.0
+N2 + N2 = 2N + N2
+   4.700e+17      -0.500    1.130e+5
+   0.5             0.0
+-----------*-----------*-----------*--------
+STOP

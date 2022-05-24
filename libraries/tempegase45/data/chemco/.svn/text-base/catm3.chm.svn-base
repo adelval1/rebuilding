@@ -1,0 +1,12 @@
+Chemical model for the mixture catm5.mix (model: Park ) 
+--------------------------------------------------------------------
+The constants for the chemical reactions are in the order cf  bf  ef
+CGS  Unit system
+NR
+2.0
+CO2 + O   = C  + 3O
+   1.400e+22       -1.50   6.3275e+04
+CO2 + C   = 2C  + O 
+   1.400e+22       -1.50   6.3275e+04
+-----------*-----------*-----------*--------
+STOP

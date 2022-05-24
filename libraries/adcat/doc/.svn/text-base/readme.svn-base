@@ -1,0 +1,4 @@
+this adcat 0.5
+-provide boundary conditions for chemical reacting flow
+-easy interface
+-all compuation are done in mole since in chemical kinetics mole is the mose intuitiv

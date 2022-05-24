@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/chemcolib_dvda
+END
+chemco_mol_dvda.f90
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/chemcolib_dvda/chemco_mol_dvda.f90
+END
+chemco_kc_dvda.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/chemcolib_dvda/chemco_kc_dvda.f90
+END
+chemcodef_dvda.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/chemcolib_dvda/chemcodef_dvda.f90
+END

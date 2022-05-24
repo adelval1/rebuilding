@@ -1,0 +1,12 @@
+750.0				!Wall temperature
+12080323.42				!Enthalpy
+10000.0				!Static pressure
+101.059				!Free stream velocity
+0.37 0.2524 0.53 0.2709 0.4443	!delta & u1e & u1y & V & NDP5
+1.1				!Barker effect
+25.d-3				!Probe radius
+1d-5				!enthalpy error
+1d-6				!enthalpy epsilon
+1d-1				!enthalpy alpha
+5000.0				!Outer temperature
+0				!1=> Equilibrium 0=> Frozen initial distribution

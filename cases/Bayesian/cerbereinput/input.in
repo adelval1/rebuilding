@@ -1,0 +1,11 @@
+1.1				!Barker effect correction
+28121751.339433 
+10000.491130 
+35.963549 
+0.025000  365.044842 
+0.215 0.344 0.993 0.213 0.335 	!delta & u1e & u1y & V & NDP5
+1d-5				!enthalpy error
+1d-6				!enthalpy epsilon
+8d-2				!enthalpy alpha
+6000				!First guess of the outer temperature
+350	2000			!Min & Max wall temperatures

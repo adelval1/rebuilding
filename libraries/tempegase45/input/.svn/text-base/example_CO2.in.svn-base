@@ -1,0 +1,55 @@
+//////////////////////////////////////////////////////////////////////
+/// INPUT FILE FOR PEGASE 4.4 STAND-ALONE VERSION                  ///
+/// do not fill in further than the dashed lines (column 70)       ///
+/// leave one blank space after arrow: -> mytext                   ///
+//////////////////////////////////////////////////////////////////////
+Mixture file -> pure_CO2_ion.mix
+----------------------------------------------------------------------
+Case label -> example of a pressure-temperature run with T scan
+----------------------------------------------------------------------
+Control flags (integers only):
+Type of operation (0: single; 1: equilibrium; 2: frozen) -> 1
+Type of input (1: p,T; 2: rho,T)--------------------------> 1
+Type of scan (0: none; 1: var1; 2: T; 3: var1 and T) -----> 2
+Anharmonicity corrections (0:none; 1:simple; 2:full) -----> 0 
+Nonequilibrium operation (0:no; 1:yes) -------------------> 0
+Use of thermodynamic curve fits (0:no; 1:table; 2:Gupta) -> 0
+Use of transport properties curve fits (0:no; 1:gupta) ---> 0
+Stop program if errors in the subroutines (0:no; 1:yes) --> 1
+Run through the user-provided code (0:no; else:as user) --> 0
+----------------------------------------------------------------------
+Output files (integers only):
+Log file ---------------> 1
+Output -----------------> 1
+Tabulated data ---------> 1
+Second tabulated data --> 1
+Custom -----------------> 1
+Formats file -> pure_CO2_ion.fmt
+----------------------------------------------------------------------
+Run parameters (real*4 with f20.6 format):
+Variable 1: from --> 101.3250 
+            to ----> 
+            step --> 
+Variable 2: from --> 500.
+            to ----> 15000.
+            step --> 100.
+----------------------------------------------------------------------
+Program parameters (1 real*4 with f20.6 format, 3 integers i5):
+Residual tolerance in Newton ---> 1.e-12
+Finite difference tolerance ----> 1.e-3
+Maximal number of iterations performed in equ. solver ----> 1000
+Maximal number of electronic levels ----------------------> 20 
+Maximal number of data points for reference files --------> 50
+Maximal size of the user-defined array of variables ------> 9
+Order of the Sonine polynomials expansion for traco part -> 3
+----------------------------------------------------------------------
+Other parameters (real*4 with f20.6 format):
+Nonequilibrium T translation -->
+                 rotation ----->
+                 vibration ---->
+                 electronic --->
+Nonequilibrium composition: nb. of species --> 2
+                            species 1 --->
+                            species 2 --->
+----------------------------------------------------------------------
+Enter MORE for additional data or STOP close the file: --> STOP

@@ -1,0 +1,5 @@
+#define catc_Runiv 		8.31447215 	//[J/mol/K]
+#define catc_pi    		3.14159265 	//[-]
+#define catc_boltzconst 	1.38065042e-23  //[J/K]
+#define catc_planckconst	6.62606896e-34 	//[J s]
+#define catc_avogadro 		6.02214179e23	//[1/mol]

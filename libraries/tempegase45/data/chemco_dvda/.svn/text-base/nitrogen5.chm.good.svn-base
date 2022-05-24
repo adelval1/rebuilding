@@ -1,0 +1,23 @@
+Chemical model for the mixture nitrogen5.mix (model of Dunn & Kang)
+-------------------------------------------------------------------
+The constants for the chemical reactions are in the order  cf  bf  ef
+CGS  system
+NR
+5.0
+N2 + N   = 2N  + N
+   4.085e+22       -1.50   1.130e+05
+   0.5              0.0
+N2 + N2  = 2N  + N2
+   4.700e+17       -0.50   1.130e+05
+   0.5              0.0
+N2 + Np  = N2p + N
+   2.020e+11        0.81   1.300e+04
+   0.5              0.5
+N + N    = N2p + em
+   1.400e+13        0.00   6.780e+04
+   0.0              1.0
+N + em   = Np  + em + em
+   1.100e+32       -3.14   1.690e+05
+   1.0              1.0
+-----------*-----------*-----------*--------
+STOP

@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib
+END
+order_reactions.f90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/order_reactions.f90
+END
+set_traco.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/set_traco.f90
+END
+lewis.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/lewis.f90
+END
+yos_binary_diffusion.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/yos_binary_diffusion.f90
+END
+set_yos.f90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/set_yos.f90
+END
+devoto_taueh.f90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/devoto_taueh.f90
+END
+tracodef.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/tracodef.f90
+END
+read_tracofits.f90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/read_tracofits.f90
+END
+brokaw_lambda_reactive_nanni.f90
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/brokaw_lambda_reactive_nanni.f90
+END
+yos_lambda_reactive.f90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/yos_lambda_reactive.f90
+END
+set_qbar.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/set_qbar.f90
+END
+set_omega.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/set_omega.f90
+END
+order_data.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/order_data.f90
+END
+prandtl.f90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/prandtl.f90
+END
+brokaw_lambda_reactive.f90
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/brokaw_lambda_reactive.f90
+END
+millikan_tauvh.f90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/millikan_tauvh.f90
+END
+thermal_cond_tot_nanni.f90
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/thermal_cond_tot_nanni.f90
+END
+yos_mfp.f90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/yos_mfp.f90
+END
+set_hreact.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/set_hreact.f90
+END
+set_a_average.f90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/set_a_average.f90
+END
+thermal_cond_tot.f90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/thermal_cond_tot.f90
+END
+thermal_cond_tot_B.f90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/thermal_cond_tot_B.f90
+END
+init_omega_el.f90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/init_omega_el.f90
+END
+devoto_lambda_electron.f90
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/devoto_lambda_electron.f90
+END
+yos_lambda_frozen.f90
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/yos_lambda_frozen.f90
+END
+yos_visc.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/yos_visc.f90
+END
+set_delta.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/set_delta.f90
+END
+init_particles.f90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/init_particles.f90
+END
+devoto_debye_length.f90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/devoto_debye_length.f90
+END
+stefan_maxwell.f90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/stefan_maxwell.f90
+END
+devoto_sigma_electron.f90
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/devoto_sigma_electron.f90
+END
+set_q.f90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/set_q.f90
+END
+thermal_cond_tot_Y.f90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/thermal_cond_tot_Y.f90
+END
+yos_lambda_reactive_nanni.f90
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/yos_lambda_reactive_nanni.f90
+END
+thermal_cond_frz.f90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/tracolib/thermal_cond_frz.f90
+END

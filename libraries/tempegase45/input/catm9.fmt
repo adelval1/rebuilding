@@ -1,0 +1,13 @@
+@ 01:'Temperature   ' ARRAY 03 I 003 J 000 K 000
+@ 02:'Mole of CO2   ' ARRAY 01 I 001 J 001 K 000
+@ 03:'Mole of N2    ' ARRAY 01 I 001 J 002 K 000
+@ 04:'Mole of O2    ' ARRAY 01 I 001 J 003 K 000
+@ 05:'Mole of CO    ' ARRAY 01 I 001 J 004 K 000
+@ 06:'Mole of CN    ' ARRAY 01 I 001 J 005 K 000
+@ 07:'Mole of NO    ' ARRAY 01 I 001 J 006 K 000
+@ 08:'Mole of C     ' ARRAY 01 I 001 J 007 K 000
+@ 09:'Mole of N     ' ARRAY 01 I 001 J 008 K 000
+@ 10:'Mole of O     ' ARRAY 01 I 001 J 009 K 000
+@ 11:'Cp of mix.    ' ARRAY 04 I 009 J 001 K 000
+@ 12:'S  of mix.    ' ARRAY 04 I 005 J 001 K 000 
+@ 13:'H  of mix.    ' ARRAY 04 I 004 J 001 K 000

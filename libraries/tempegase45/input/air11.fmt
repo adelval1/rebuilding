@@ -1,0 +1,12 @@
+@ 01:'Temperature   ' ARRAY 03 I 003 J 000 K 000
+@ 02:'O2            ' ARRAY 01 I 001 J 001 K 000
+@ 03:'N2            ' ARRAY 01 I 001 J 002 K 000
+@ 04:'O             ' ARRAY 01 I 001 J 010 K 000
+@ 05:'N             ' ARRAY 01 I 001 J 011 K 000
+@ 06:'NO            ' ARRAY 01 I 001 J 003 K 000
+@ 07:'e-            ' ARRAY 01 I 001 J 013 K 000
+@ 08:'NO+           ' ARRAY 01 I 001 J 004 K 000
+@ 09:'O+            ' ARRAY 01 I 001 J 005 K 000
+@ 10:'N+            ' ARRAY 01 I 001 J 006 K 000
+@ 11:'O2+           ' ARRAY 01 I 001 J 008 K 000
+@ 12:'tot_cond	    ' ARRAY 06 I 002 J 001 K 000

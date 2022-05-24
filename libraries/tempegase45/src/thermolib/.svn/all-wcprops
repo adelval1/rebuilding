@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib
+END
+cv_equ.f90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/cv_equ.f90
+END
+molefrac_eq_provaOLD.f90
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/molefrac_eq_provaOLD.f90
+END
+cp_frz.f90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/cp_frz.f90
+END
+enthalpy.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/enthalpy.f90
+END
+equ_frac.f90.orig
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/equ_frac.f90.orig
+END
+thermolib.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/thermolib.f90
+END
+mix_entr.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/mix_entr.f90
+END
+equ_frac.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/equ_frac.f90
+END
+gibbs.f90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/gibbs.f90
+END
+cv_frz.f90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/cv_frz.f90
+END
+energy.f90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/energy.f90
+END
+entropy.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/entropy.f90
+END
+molefrac_eqNN_constr.f90
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/molefrac_eqNN_constr.f90
+END
+mix_gibs.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/mix_gibs.f90
+END
+mix_helm.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/mix_helm.f90
+END
+cp.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/cp.f90
+END
+sensitivities.f90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/sensitivities.f90
+END
+equ_cst.f90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/equ_cst.f90
+END
+helmholtz.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/helmholtz.f90
+END
+gupta_lib.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/gupta_lib.f90
+END
+diss_enthalpy.f90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/diss_enthalpy.f90
+END
+mix_ener.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/mix_ener.f90
+END
+mix_pgas.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/mix_pgas.f90
+END
+cv.f90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/cv.f90
+END
+molefrac_eqNN.f90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/molefrac_eqNN.f90
+END
+partition.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/partition.f90
+END
+soundspeed.f90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/soundspeed.f90
+END
+mix_enth.f90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/mix_enth.f90
+END
+cp_equ.f90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/cp_equ.f90
+END
+thermodef.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/cerboula/!svn/ver/52/cerboula2.2/libraries/tempegase45/src/thermolib/thermodef.f90
+END

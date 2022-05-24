@@ -1,0 +1,6 @@
+Matrix for the boundary conditions in Scott form
+Matrix nu
+0.0  1.0
+Matrix mu for the reaction N+N-s=N2+s
+0.0  1.0
+0.0  0.0

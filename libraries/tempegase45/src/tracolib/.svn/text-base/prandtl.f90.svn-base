@@ -1,0 +1,10 @@
+REAL(kind=8) FUNCTION PRANDTL_NUMBER (mu,cp,k)
+!
+    IMPLICIT NONE
+    REAL(kind=8) mu,cp,k
+!
+    PRANDTL_NUMBER=mu*cp/k
+!
+    RETURN
+!
+END FUNCTION PRANDTL_NUMBER

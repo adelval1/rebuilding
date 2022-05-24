@@ -1,0 +1,7 @@
+1.1					!Barker effect correction
+0.5					!gamma
+350					!Wall temperature
+15.0d0			!Dynamic pressure
+1500				!Static pressure
+25.0d-3	300.d3		!Probe radius &	Heat flux
+0.37 0.2524 0.53 0.2709 0.4443	!delta & u1e & u1y & V & NDP5

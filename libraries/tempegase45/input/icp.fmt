@@ -1,0 +1,8 @@
+@ 01:'Temperature   ' ARRAY 03 I 003 J 000 K 000
+@ 02:'Density       ' ARRAY 03 I 002 J 000 K 000
+@ 03:'Enthalpy      ' ARRAY 04 I 013 J 001 K 000
+@ 04:'Spec_heat     ' ARRAY 04 I 018 J 001 K 000
+@ 05:'Dyn. Viscous. ' ARRAY 06 I 001 J 001 K 000
+@ 06:'lambda        ' ARRAY 06 I 002 J 001 K 000
+@ 07:'sigma         ' ARRAY 06 I 004 J 001 K 000
+

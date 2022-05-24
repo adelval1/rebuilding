@@ -1,0 +1,10 @@
+   xgrid,  rbody,  rhoext,  mu
+ *******************************
+            uext,  hext,  pext
+ *******************************
+                         duedx
+  0.0000000E+00
+Data to build alphae and bl.l.
+ *******************************
+    Concent_ext (PEGASE ORDER)
+ *******************************

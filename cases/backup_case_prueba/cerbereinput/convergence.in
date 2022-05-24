@@ -1,0 +1,4 @@
+1d-6	!Epsilon value, in the computation of the derivative of the residual
+.85d0	!alpha, relaxation factor
+1d-5	!Error for ending the iterative rebuildingsmu
+1d-4	!Max error allowed for Kp

@@ -1,0 +1,450 @@
+BSRC=$(shell pwd)/../../src
+therlib = $(BSRC)/thermolib
+traclib = $(BSRC)/tracolib
+chemlib = $(BSRC)/chemcolib
+chemlib_dvda = $(BSRC)/chemcolib_dvda
+flib = $(BSRC)/fortranlib
+lib = $(BSRC)/../exec/lib
+exe = $(BSRC)/../exec
+
+# C compiler given below
+CC=gcc
+
+# FORTRAN-90 compiler given below
+FC=ifort
+
+# LIBRARY NAMES GIVEN BELOW
+LIBRARIES=
+
+# LINKER GIVEN BELOW
+LD=ifort
+# LINKER FLAGS GIVEN BELOW
+
+LDFLAGS= -trap=ALL
+#LDFLAGS=
+
+# DEFINES
+AR=ar
+ARFLAGS=rv
+CP=cp -f 
+RM=rm -f
+RNLIB = touch
+# COMPILER FLAGS GIVEN BELOW
+
+F90FLAGS=-O 
+
+COMPILERFLAGS= -O
+
+COMPILERFLAGS=$(F90FLAGS)
+CFLAGS=$(COMPILERFLAGS)
+
+#CFLAGS=-O2
+#FFLAGS=$(COMPILERFLAGS) #-C=all -byte_kinds
+#FFLAGS= -O -byte_kinds -ccarg -m486
+
+FFLAGS=$(F90FLAGS)
+PFLAGS=$(COMPILERFLAGS)
+COBFLAGS=$(COMPILERFLAGS) #-xref
+CXXFLAGS=$(COMPILERFLAGS) #-xref
+
+# INCLUDE SEARCH PATH GIVEN BELOW
+INCLUDES=
+
+
+OBJS= $(lib)/mod_equili.o\
+ $(lib)/mod_pegase.o\
+ $(lib)/mod_thermo.o\
+ $(lib)/mod_traco.o\
+ $(lib)/mod_chemco.o\
+ $(lib)/mod_chemco_dvda.o\
+ $(lib)/interf_thermo.o\
+ $(lib)/interf_traco.o\
+ $(lib)/interf_chemco.o\
+ $(lib)/close_input.o\
+ $(lib)/compute_output.o\
+ $(lib)/custom_output.o\
+ $(lib)/explicit_input.o\
+ $(lib)/get_input_param.o\
+ $(lib)/implicit_input.o\
+ $(lib)/open_input.o\
+ $(lib)/print_output.o\
+ $(lib)/prompt_input.o\
+ $(lib)/user_routines.o\
+ $(lib)/dlib-err.o\
+ $(lib)/dlibchar.o\
+ $(lib)/dlibfile.o\
+ $(lib)/parse_input.o\
+ $(lib)/cp.o\
+ $(lib)/cp_equ.o\
+ $(lib)/cp_frz.o\
+ $(lib)/cv.o\
+ $(lib)/cv_equ.o\
+ $(lib)/cv_frz.o\
+ $(lib)/diss_enthalpy.o\
+ $(lib)/energy.o\
+ $(lib)/enthalpy.o\
+ $(lib)/entropy.o\
+ $(lib)/equ_cst.o\
+ $(lib)/equ_frac.o\
+ $(lib)/gibbs.o\
+ $(lib)/gupta_lib.o\
+ $(lib)/helmholtz.o\
+ $(lib)/mix_ener.o\
+ $(lib)/mix_enth.o\
+ $(lib)/mix_entr.o\
+ $(lib)/mix_gibs.o\
+ $(lib)/mix_helm.o\
+ $(lib)/mix_pgas.o\
+ $(lib)/partition.o\
+ $(lib)/sensitivities.o\
+ $(lib)/soundspeed.o\
+ $(lib)/thermodef.o\
+ $(lib)/thermolib.o\
+ $(lib)/devoto_debye_length.o\
+ $(lib)/devoto_taueh.o\
+ $(lib)/millikan_tauvh.o\
+ $(lib)/devoto_lambda_electron.o\
+ $(lib)/devoto_sigma_electron.o\
+ $(lib)/init_omega_el.o\
+ $(lib)/init_particles.o\
+ $(lib)/lewis.o\
+ $(lib)/order_data.o\
+ $(lib)/order_reactions.o\
+ $(lib)/prandtl.o\
+ $(lib)/read_tracofits.o\
+ $(lib)/set_a_average.o\
+ $(lib)/set_delta.o\
+ $(lib)/set_hreact.o\
+ $(lib)/set_omega.o\
+ $(lib)/set_q.o\
+ $(lib)/set_qbar.o\
+ $(lib)/set_traco.o\
+ $(lib)/set_yos.o\
+ $(lib)/thermal_cond_frz.o\
+ $(lib)/thermal_cond_tot.o\
+ $(lib)/tracodef.o\
+ $(lib)/yos_binary_diffusion.o\
+ $(lib)/yos_lambda_frozen.o\
+ $(lib)/yos_lambda_reactive.o\
+ $(lib)/stefan_maxwell.o\
+ $(lib)/yos_mfp.o\
+ $(lib)/yos_visc.o\
+ $(lib)/chemcodef.o\
+ $(lib)/chemco_den.o\
+ $(lib)/chemco_mol.o\
+ $(lib)/chemco_kc.o \
+ $(lib)/chemcodef_dvda.o\
+ $(lib)/chemco_mol_dvda.o\
+ $(lib)/chemco_kc_dvda.o \
+ $(lib)/yos_lambda_reactive_nanni.o\
+ $(lib)/thermal_cond_tot_Y.o\
+ $(lib)/molefrac_eqNN.o\
+ $(lib)/molefrac_eqNN_constr.o 
+ 
+pegobj= \
+ $(lib)/pegase.o
+
+
+default: peglib
+
+#
+$(lib)/mod_equili.o : $(BSRC)/mod_equili.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/mod_equili.f90
+
+$(lib)/mod_pegase.o : $(BSRC)/mod_pegase.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/mod_pegase.f90
+
+$(lib)/mod_thermo.o : $(BSRC)/mod_thermo.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/mod_thermo.f90
+
+$(lib)/mod_traco.o : $(BSRC)/mod_traco.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/mod_traco.f90
+
+$(lib)/mod_chemco.o : $(BSRC)/mod_chemco.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/mod_chemco.f90
+
+$(lib)/mod_chemco_dvda.o : $(BSRC)/mod_chemco_dvda.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/mod_chemco_dvda.f90
+
+$(lib)/interf_thermo.o : $(BSRC)/interf_thermo.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/interf_thermo.f90
+
+$(lib)/interf_traco.o : $(BSRC)/interf_traco.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/interf_traco.f90
+
+$(lib)/interf_chemco.o : $(BSRC)/interf_chemco.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/interf_chemco.f90
+
+$(lib)/close_input.o : $(BSRC)/close_input.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/close_input.f90
+
+$(lib)/compute_output.o : $(BSRC)/compute_output.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/compute_output.f90
+
+$(lib)/custom_output.o : $(BSRC)/custom_output.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/custom_output.f90
+
+$(lib)/explicit_input.o : $(BSRC)/explicit_input.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/explicit_input.f90
+
+$(lib)/get_input_param.o : $(BSRC)/get_input_param.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/get_input_param.f90
+
+$(lib)/implicit_input.o : $(BSRC)/implicit_input.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/implicit_input.f90
+
+$(lib)/open_input.o : $(BSRC)/open_input.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/open_input.f90
+
+$(lib)/print_output.o : $(BSRC)/print_output.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/print_output.f90
+
+$(lib)/prompt_input.o   : $(BSRC)/prompt_input.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/prompt_input.f90
+
+$(lib)/pegase.o   : $(BSRC)/pegase.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/pegase.f90
+
+$(lib)/user_routines.o : $(BSRC)/user_routines.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(BSRC)/user_routines.f90
+
+$(lib)/dlib-err.o : $(flib)/dlib-err.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(flib)/dlib-err.f90
+
+$(lib)/dlibchar.o : $(flib)/dlibchar.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(flib)/dlibchar.f90
+
+$(lib)/dlibfile.o : $(flib)/dlibfile.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(flib)/dlibfile.f90
+
+$(lib)/parse_input.o : $(flib)/parse_input.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(flib)/parse_input.f90
+
+$(lib)/cp.o : $(therlib)/cp.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/cp.f90
+
+$(lib)/cp_equ.o : $(therlib)/cp_equ.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/cp_equ.f90
+
+$(lib)/cp_frz.o : $(therlib)/cp_frz.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/cp_frz.f90
+
+$(lib)/cv.o : $(therlib)/cv.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/cv.f90
+
+$(lib)/cv_equ.o : $(therlib)/cv_equ.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/cv_equ.f90
+
+$(lib)/cv_frz.o : $(therlib)/cv_frz.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/cv_frz.f90
+
+$(lib)/diss_enthalpy.o : $(therlib)/diss_enthalpy.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/diss_enthalpy.f90
+
+$(lib)/energy.o : $(therlib)/energy.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/energy.f90
+
+$(lib)/enthalpy.o : $(therlib)/enthalpy.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/enthalpy.f90
+
+$(lib)/entropy.o : $(therlib)/entropy.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/entropy.f90
+
+$(lib)/equ_cst.o : $(therlib)/equ_cst.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/equ_cst.f90
+
+$(lib)/equ_frac.o : $(therlib)/equ_frac.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/equ_frac.f90
+
+$(lib)/gibbs.o : $(therlib)/gibbs.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/gibbs.f90
+
+$(lib)/gupta_lib.o : $(therlib)/gupta_lib.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/gupta_lib.f90
+
+$(lib)/helmholtz.o : $(therlib)/helmholtz.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/helmholtz.f90
+
+$(lib)/mix_ener.o : $(therlib)/mix_ener.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/mix_ener.f90
+
+$(lib)/mix_enth.o : $(therlib)/mix_enth.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/mix_enth.f90
+
+$(lib)/mix_entr.o : $(therlib)/mix_entr.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/mix_entr.f90
+
+$(lib)/mix_gibs.o : $(therlib)/mix_gibs.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/mix_gibs.f90
+
+$(lib)/mix_helm.o : $(therlib)/mix_helm.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/mix_helm.f90
+
+$(lib)/mix_pgas.o : $(therlib)/mix_pgas.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/mix_pgas.f90
+
+$(lib)/partition.o : $(therlib)/partition.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/partition.f90
+
+$(lib)/sensitivities.o : $(therlib)/sensitivities.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/sensitivities.f90
+
+$(lib)/soundspeed.o : $(therlib)/soundspeed.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/soundspeed.f90
+
+$(lib)/thermodef.o : $(therlib)/thermodef.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/thermodef.f90
+
+$(lib)/thermolib.o : $(therlib)/thermolib.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/thermolib.f90
+
+$(lib)/brokaw_lambda_reactive.o : $(traclib)/brokaw_lambda_reactive.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/brokaw_lambda_reactive.f90
+
+$(lib)/stefan_maxwell.o : $(traclib)/stefan_maxwell.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/stefan_maxwell.f90
+
+$(lib)/devoto_debye_length.o : $(traclib)/devoto_debye_length.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/devoto_debye_length.f90
+
+$(lib)/devoto_taueh.o : $(traclib)/devoto_taueh.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/devoto_taueh.f90
+
+$(lib)/millikan_tauvh.o : $(traclib)/millikan_tauvh.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/millikan_tauvh.f90
+
+$(lib)/devoto_lambda_electron.o : $(traclib)/devoto_lambda_electron.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/devoto_lambda_electron.f90
+
+$(lib)/devoto_sigma_electron.o : $(traclib)/devoto_sigma_electron.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/devoto_sigma_electron.f90
+
+$(lib)/init_omega_el.o : $(traclib)/init_omega_el.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/init_omega_el.f90
+
+$(lib)/init_particles.o : $(traclib)/init_particles.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/init_particles.f90
+
+$(lib)/lewis.o : $(traclib)/lewis.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/lewis.f90
+
+$(lib)/order_data.o : $(traclib)/order_data.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/order_data.f90
+
+$(lib)/order_reactions.o : $(traclib)/order_reactions.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/order_reactions.f90
+
+$(lib)/prandtl.o : $(traclib)/prandtl.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/prandtl.f90
+
+$(lib)/read_tracofits.o : $(traclib)/read_tracofits.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/read_tracofits.f90
+
+$(lib)/set_a_average.o : $(traclib)/set_a_average.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/set_a_average.f90
+
+$(lib)/set_delta.o : $(traclib)/set_delta.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/set_delta.f90
+
+$(lib)/set_hreact.o : $(traclib)/set_hreact.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/set_hreact.f90
+
+$(lib)/set_omega.o : $(traclib)/set_omega.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/set_omega.f90
+
+$(lib)/set_q.o : $(traclib)/set_q.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/set_q.f90
+
+$(lib)/set_qbar.o : $(traclib)/set_qbar.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/set_qbar.f90
+
+$(lib)/set_traco.o : $(traclib)/set_traco.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/set_traco.f90
+
+$(lib)/set_yos.o : $(traclib)/set_yos.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/set_yos.f90
+
+$(lib)/thermal_cond_frz.o : $(traclib)/thermal_cond_frz.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/thermal_cond_frz.f90
+
+$(lib)/thermal_cond_tot.o : $(traclib)/thermal_cond_tot.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/thermal_cond_tot.f90
+
+$(lib)/tracodef.o : $(traclib)/tracodef.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/tracodef.f90
+
+$(lib)/yos_binary_diffusion.o : $(traclib)/yos_binary_diffusion.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/yos_binary_diffusion.f90
+
+$(lib)/yos_lambda_frozen.o : $(traclib)/yos_lambda_frozen.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/yos_lambda_frozen.f90
+
+$(lib)/yos_lambda_reactive.o : $(traclib)/yos_lambda_reactive.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/yos_lambda_reactive.f90
+
+$(lib)/yos_mfp.o : $(traclib)/yos_mfp.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/yos_mfp.f90
+
+$(lib)/yos_visc.o : $(traclib)/yos_visc.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/yos_visc.f90
+
+$(lib)/chemcodef.o : $(chemlib)/chemcodef.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(chemlib)/chemcodef.f90
+
+$(lib)/chemco_vrf.o : $(chemlib)/chemco_vrf.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(chemlib)/chemco_vrf.f90
+
+$(lib)/chemco_den.o : $(chemlib)/chemco_den.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(chemlib)/chemco_den.f90
+
+$(lib)/chemco_mol.o : $(chemlib)/chemco_mol.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(chemlib)/chemco_mol.f90
+
+$(lib)/chemco_kc.o : $(chemlib)/chemco_kc.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(chemlib)/chemco_kc.f90
+
+$(lib)/chemcodef_dvda.o : $(chemlib_dvda)/chemcodef_dvda.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(chemlib_dvda)/chemcodef_dvda.f90
+
+$(lib)/chemco_mol_dvda.o : $(chemlib_dvda)/chemco_mol_dvda.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(chemlib_dvda)/chemco_mol_dvda.f90
+
+$(lib)/chemco_kc_dvda.o : $(chemlib_dvda)/chemco_kc_dvda.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(chemlib_dvda)/chemco_kc_dvda.f90
+
+$(lib)/yos_lambda_reactive_nanni.o : $(traclib)/yos_lambda_reactive_nanni.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/yos_lambda_reactive_nanni.f90
+
+$(lib)/thermal_cond_tot_Y.o : $(traclib)/thermal_cond_tot_Y.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/thermal_cond_tot_Y.f90
+
+$(lib)/brokaw_lambda_reactive_nanni.o : $(traclib)/brokaw_lambda_reactive_nanni.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(traclib)/brokaw_lambda_reactive_nanni.f90
+
+$(lib)/molefrac_eqNN.o : $(therlib)/molefrac_eqNN.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/molefrac_eqNN.f90
+	
+$(lib)/molefrac_eqNN_constr.o : $(therlib)/molefrac_eqNN_constr.f90
+	cd $(lib); $(FC) $(FFLAGS) -c $(therlib)/molefrac_eqNN_constr.f90
+
+peglib: $(OBJS) 
+	@echo "Building library Pegase"
+	@rm -f libpegase.a
+	cd $(lib); $(AR) ruv libpegase.a $(OBJS)
+	@cd $(lib); $(RNLIB) libpegase.a
+
+
+pegexe: $(OBJS) $(pegobj)
+	@echo "Building pegase"
+	@$(LD) -o $(exe)/pegase $(OBJS) $(pegobj)
+
+
+clean:
+	cd $(lib); $(RM)  $(OBJS) $(pegobj) core *mod libpegase.a 
+
+
+touchsrcs:
+	touch $(SRCS)
+
+
+

@@ -1,0 +1,24 @@
+      //////////////////////////////////////////////////////////////////
+      //                                                              //
+      //      PPPP     EEEEE     GGG      AAA      SSS     EEEEE      //
+      //      P  PP    E        G        A   A    S        E          //
+      //      PPPP     EEEE     G  GG    AAAAA     SSS     EEEE       //
+      //      P        E        G   G    A   A        S    E          //
+      //      P        EEEEE     GGG     A   A     SSS     EEEEE      //
+      //                                                              //
+      //              PErfect GAS Equation solver PEGASE,             //
+      //              version 4.5a for DOS and UNIX shells            //
+      //                                                              //
+      //                        Benoit Bottin                         //
+      //    D. Vanden Abeele, P. Barbante, T. Visser, J.P. Mellado    //
+      //                                                              //
+      //                      January 31,  1999                       //
+      //            von Karman Institute for Fluid Dynamics           //
+      //                Aeronautics/Aerospace Department              //
+      //                   72 -- Chaussee de Waterloo                 //
+      //               B-1640 Rhode-Saint-Genese  Belgium             //
+      //                                                              //
+      //////////////////////////////////////////////////////////////////
+
+
+ Please provide your input file name:

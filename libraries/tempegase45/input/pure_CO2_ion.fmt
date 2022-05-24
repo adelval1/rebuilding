@@ -1,0 +1,6 @@
+@ 01:'Temperature   ' ARRAY 03 I 003 J 000 K 000
+@ 02:'H  of mix.    ' ARRAY 04 I 004 J 001 K 000
+@ 03:'S  of mix.    ' ARRAY 04 I 005 J 001 K 000
+@ 04:'rho           ' ARRAY 03 I 002 J 000 K 000
+@ 05:'Comp. Fact.   ' ARRAY 03 I 007 J 000 K 000
+@ 06:'Eq.Sound Speed' ARRAY 03 I 014 J 000 K 000

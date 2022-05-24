@@ -1,0 +1,10 @@
+-5.d0				!Minimum log(gamma)
+0.0d0				!Maximum log(gamma)
+1.1				!Barker effect correction
+30				!Number of points in the S-curve
+1200.				!Wall temperature
+75. 				!Dynamic pressure
+1300.				!Static pressure
+25.d-3	91.707d3		!Probe radius 1 & Heat flux 1
+0.3879 0.3010 0.5667 0.3096 0.4499 !delta & u1e & u1y & V & NDP5
+S_curve_probe.out			!output name (1st probe)
